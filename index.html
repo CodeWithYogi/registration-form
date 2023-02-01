@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid d-flex">
+
+        <!-- sidebar  -->
+        <div class="sidebar bg-white" id="side-nav">
+            <div class="header-box px-2 pt-3 pb-4">
+                <h1 class="fs-4 main-heading"><span class="bg-primary text-dark px-2 my-2 rounded-circle shadow"></span><span
+                        class="text-dark ms-2">FINSIGHTS</span></h1>
+            </div>
+            <ul class="list-unstyled px-2">
+                <li><a href="#" class="text-decoration-none px-3 py-2 d-block font-resize"><i
+                            class="fa-solid fa-house me-1"></i>
+                        Dashboard</a></li>
+                <li><a href="#" class="text-decoration-none px-3 py-2 d-block font-resize"><i
+                            class="fa-regular fa-pen me-1"></i>
+                        Masters</a></li>
+                <li><a href="#" class="text-decoration-none px-3 py-2 d-block font-resize"><i
+                            class="fa-solid fa-tent-arrow-left-right me-1"></i> Transactions</a></li>
+                <li><a href="#" class="text-decoration-none px-3 py-2 d-block font-resize"><i
+                            class="fa-solid fa-pen me-1"></i>
+                        Statuatory</a></li>
+                <li><a href="#" class="text-decoration-none px-3 py-2 d-block font-resize"><i
+                            class="fa-solid fa-house me-1"></i>
+                        Inventory</a></li>
+                <li><a href="#" class="text-decoration-none px-3 py-2 d-block font-resize"><i
+                            class="fa-solid fa-lock me-1"></i>
+                        Reports</a></li>
+                <li><a href="#" class="text-decoration-none px-3 py-2 d-block font-resize"><i
+                            class="fa-solid fa-file me-1"></i>
+                        Documents</a></li>
+                <li><a href="#" class="text-decoration-none px-3 py-2 d-block font-resize"><i
+                            class="fa-solid fa-arrows-up-to-line me-1"></i>Audit</a></li>
+            </ul>
+        </div>
+        <!-- end of sidebar  -->
+
+        <div class="content">
+        <!-- navbar  -->
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                    <div class="container-fluid row">
+                        <div class="nav-select col-3">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Organisation full name</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+
+                        <div class="nav-items col-9">
+                            <div class="d-flex justify-content-between">
+                                <div class="search-item d-flex">
+                                    <input class="form-control me-2 nav-flex" type="search" placeholder="Search"
+                                        aria-label="Search">
+                                    <button class="btn btn-primary" type="submit">Create</button>
+                                </div>
+                                <div class="nav-icons d-flex justify-content-between">
+                                    <span class="me-3"><i class="fa-solid fa-question"></i></span>
+                                    <span class="me-3"><i class="fa-regular fa-bell"></i></span>
+                                    <span class="me-3"><i class="fa-regular fa-gear"></i></span>
+                                    <img class="me-3 nav-logo" src="./images/icon.png" alt="picture">
+                                    <span class="me-3"><i class="fa-solid fa-angle-down"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        <!-- end of navbar  -->
+
+        <!-- main content  -->
+            <main class="container-fluid mt-2 position-relative" id="main-div">
+                <div class="bg-white p-2 rounded-3" id="left-div">
+                    <div class="d-flex justify-content-between">
+                        <p class="h6 ms-2 mt-2">Create sales voucher</p>
+                        <button class="btn btn-outline-primary me-4 mt-2" id="toggle-btn">Configuration</button>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="row mb-3">
+                            <div class="col-sm-2">
+                                <p class="h6">Voucher Number</p>
+                            </div>
+                            <div class="col-sm-2">
+                                <p class="font-resize"><a href="#">#LWT/ZYNA27BK</a></p>
+                            </div>
+                            <div class="col-sm-4">
+                                <select class="form-select font-resize" aria-label="Default select example">
+                                    <option selected>Select voucher type</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="date" class="form-control font-resize" id="formGroupExampleInput"
+                                    placeholder="Example input placeholder">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div>
+                                    <label for="formGroupExampleInput" class="form-label font-resize">Party name</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Enter party name</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div>
+                                    <label for="formGroupExampleInput2" class="form-label font-resize">Sales
+                                        ladger</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Sales ladger</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid mb-4">
+                            <p><a href="#">More details</a></p>
+                        </div>
+                        <div class="container-fluid mb-4">
+                            <table class="table table-striped table-bordered table-hover table-responsive">
+                                <tbody>
+                                    <tr>
+                                        <td><input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault"></td>
+                                        <td scope="col">Item name</td>
+                                        <td scope="col">Quantity</td>
+                                        <td scope="col">Rate</td>
+                                        <td scope="col">Per</td>
+                                        <td scope="col">Disc.</td>
+                                        <td scope="col">GST</td>
+                                        <td scope="col">Amount</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault"></td>
+                                        <td scope="col">Item name</td>
+                                        <td scope="col d-flex">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>qty</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </td>
+                                        <td scope="col">Rate</td>
+                                        <td scope="col">Per</td>
+                                        <td scope="col">Disc.</td>
+                                        <td scope="col">GST</td>
+                                        <td scope="col">Amount</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="8">
+                                            <p><a href="">+ Add item</a></p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="container-fluid">
+                            <table class="table table-striped table-bordered table-hover">
+                                <tbody>
+                                    <tr>
+                                        <td><input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault"></td>
+                                        <td scope="col">Item name</td>
+                                        <td scope="col">Amount</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault"></td>
+                                        <td scope="col">Leadger name</td>
+                                        <td scope="col">qty</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="8">
+                                            <p><a href="">+ Add ledger</a></p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div>
+                            <div class="container-fluid ">
+                                <button type="button" class="btn btn-outline-primary">Save</button>
+                                <button class="btn btn-primary" type="submit">Save a draft</button>
+                                <button type="button" class="btn btn-outline-primary">Cancel</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- side content  -->
+                <aside class="bg-white rounded-3 position-absolute top-0 end-0 d-none h-100" id="aside-nav">
+                    <div class="d-flex justify-content-between">
+                        <h3 class="h5 ms-3">Configuration</h3>
+                        <button type="button" class="btn btn-light" id="close-btn"><i class="fa-sharp fa-solid fa-xmark"></i></button>
+                    </div>
+                    <hr>
+                    <div>
+                        <ul class="list-unstyled px-2">
+                            <li><a href="#" class="text-decoration-none px-3 py-2 d-block font-resize text-dark h6">Bill details</a></li>
+                            <li><a href="#" class="text-decoration-none px-3 py-2 d-block font-resize text-dark h6">Buyer details</a></li>
+                            <li><a href="#" class="text-decoration-none px-3 py-2 d-block font-resize text-dark h6">Consignee details</a></li>
+                            <li><a href="#" class="text-decoration-none px-3 py-2 d-block font-resize text-dark h6">Dispatch details</a></li>
+                            <li><a href="#" class="text-decoration-none px-3 py-2 d-block font-resize text-dark h6">E-Way bill details</a></li>
+                            <li><a href="#" class="text-decoration-none px-3 py-2 d-block font-resize text-dark h6">Tax declaration</a></li>
+                            <li><a href="#" class="text-decoration-none px-3 py-2 d-block font-resize text-dark h6">Item allocation</a></li>
+                            <li><a href="#" class="text-decoration-none px-3 py-2 d-block font-resize text-dark h6">VAT details</a></li>
+                        </ul>
+                    </div>
+
+                </aside>
+                <!-- end of the side content  -->
+            </main>
+        <!-- end of main content  -->
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
